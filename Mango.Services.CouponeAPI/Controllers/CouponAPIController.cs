@@ -39,5 +39,21 @@ namespace Mango.Services.CouponeAPI.Controllers
             }
             return _response;
         }
+        [HttpGet]
+        [Route("{id:int}")]
+        public ResponseDto Get(int id)
+        {
+            try
+            {
+                Coupon obj = _db.Coupons.First(u => u.CouponId == id);
+                _response.Result = _mapper.Map<CouponDto>(obj);
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.Message = ex.Message;
+            }
+            return _response;
+        }
     }
 }
