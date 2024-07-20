@@ -12,4 +12,9 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Mango.Services.CouponeAPI\Mango.Services.CouponeAPI.csproj" />
+    <ProjectReference Include="..\Mango.Services.ProductAPI\Mango.Services.ProductAPI.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,6 +1,7 @@
 ﻿using System.Net.Mime;
 using System.Security.AccessControl;
 using static Mango.Web.Utility.SD;
+using ContentType = Mango.Web.Utility.SD.ContentType;
 
 namespace Mango.Web.Models
 {
@@ -11,6 +12,6 @@ namespace Mango.Web.Models
         public object Data { get; set; }
         public string AccessToken { get; set; }
 
-      //  public ContentType ContentType { get; set; } = ContentType.Json;
+        public ContentType ContentType { get; set; } = ContentType.Json;
     }
 }
