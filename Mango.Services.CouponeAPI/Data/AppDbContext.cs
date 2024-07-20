@@ -31,6 +31,13 @@ namespace Mango.Services.CouponeAPI.Data
                 DiscountAmount = 20,
                 MinAmount = 40
             });
+            modelBuilder.Entity<Coupon>().HasData(new Coupon
+            {
+                CouponId = 3,
+                CouponCode = "30OFF",
+                DiscountAmount = 20,
+                MinAmount = 40
+            });
         }
     }
 }
